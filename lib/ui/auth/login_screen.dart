@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
           backgroundColor: Colors.deepPurple,
           automaticallyImplyLeading: false,
           title: const Text(
-            'Log in ',
+            'Log innnnnnnn ',
             style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
