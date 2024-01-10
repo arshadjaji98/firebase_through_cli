@@ -49,6 +49,8 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyChmOOvjlfRhcE03WaIuADwO0BNQ92cKzQ',
     appId: '1:349045434201:web:a0ccb9236e3475e7fa0e48',
+    databaseURL:
+        'https://first-project-ba60c-default-rtdb.asia-southeast1.firebasedatabase.app',
     messagingSenderId: '349045434201',
     projectId: 'first-project-ba60c',
     authDomain: 'first-project-ba60c.firebaseapp.com',
@@ -59,6 +61,8 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDNYZz-4SiAiFhWSewHx5i-RxGskOo7vi4',
     appId: '1:349045434201:android:ef612355521a83e1fa0e48',
+    databaseURL:
+        'https://first-project-ba60c-default-rtdb.asia-southeast1.firebasedatabase.app',
     messagingSenderId: '349045434201',
     projectId: 'first-project-ba60c',
     storageBucket: 'first-project-ba60c.appspot.com',

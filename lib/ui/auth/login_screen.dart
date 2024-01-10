@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_through_cli/ui/auth/login_with_phone_number.dart';
 import 'package:firebase_through_cli/ui/auth/signup_screen.dart';
+import 'package:firebase_through_cli/ui/posts/forgot_password.dart';
 import 'package:firebase_through_cli/ui/posts/posts_screen.dart';
 import 'package:firebase_through_cli/utills/utility.dart';
 import 'package:firebase_through_cli/widgets/rounds_button.dart';
@@ -102,7 +103,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         obscureText: true,
                         decoration: const InputDecoration(
                             hintText: 'Enter password',
-                            // helperText: 'abc@gmail.com',
                             prefixIcon: Icon(Icons.key),
                             suffixIcon: Icon(Icons.visibility)),
                         validator: (value) {
@@ -126,8 +126,23 @@ class _LoginScreenState extends State<LoginScreen> {
                   }
                 },
               ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const ForgotPasswordScreen()));
+                    },
+                    child: const Text(
+                      'forgot password',
+                      style: TextStyle(fontSize: 15),
+                    )),
+              ),
               const SizedBox(
-                height: 25,
+                height: 55,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -146,9 +161,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(fontSize: 15),
                       )),
                 ],
-              ),
-              const SizedBox(
-                height: 25,
               ),
               InkWell(
                 onTap: () {
